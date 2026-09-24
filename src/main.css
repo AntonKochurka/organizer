@@ -1,1 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* This is Catppuccin Macchiato color pallete. */
+  --color-crust: #181926;
+  --color-mantle: #1e2030;
+  --color-base: #24273a;
+  --color-surface0: #363a4f;
+  --color-surface1: #494d64;
+  --color-overlay1: #8087a2;
+  --color-subtext0: #a5adcb;
+  --color-subtext1: #b8c0e0;
+  --color-text: #cad3f5;
+  --color-lavender: #b7bdf8;
+  --color-blue: #8aadf4;
+  --color-sapphire: #7dc4e4;
+  --color-teal: #8bd5ca;
+  --color-mauve: #c6a0f6;
+  --color-pink: #f5bde6;
+  --color-peach: #f5a97f;
+
+  --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-crust);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
