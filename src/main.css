@@ -42,3 +42,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.accent {
+  background-image: linear-gradient(
+    to right, 
+    var(--color-mauve), 
+    var(--color-blue), 
+    var(--color-teal)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
